@@ -6,6 +6,7 @@ description = "Lab project for SRE tasks solved using python"
 
 [tool.poetry.dependencies]
 python = "^3.12"
+pytest = "^8.4.0"
 
 [tool.poetry-workspaces]
 members = ["parsing", "metrics"]
