@@ -27,7 +27,8 @@ jobs:
 
     - name: Run tests
       run: |
-        poetry run pytest || exit_code=$?
+        poetry run pytest 
+        exit_code=$?
         if [ "$exit_code" = "5" ]; then
           echo "No tests collected, ignoring exit code 5"
           exit 0
