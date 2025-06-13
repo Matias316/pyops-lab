@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "metrics"
+version = "0.1.0"
+description = "P95/P99, threshold checks, alert simulation"
+packages = [{ include = "metrics" }]
+package-mode = true
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
