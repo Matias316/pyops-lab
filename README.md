@@ -38,6 +38,6 @@ All subprojects include entrypoint
 ```bash
 cd pyops-lab
 
-# Example: poetry run -C metrics python metrics/run.py
-poetry run -C <subproject> python <subproject_folder_name>/run.py
+# Example: poetry run -C metrics python metrics/percentiles_calculator.py
+poetry run -C <subproject> python <subproject_folder_name>/<utility>
 ```
