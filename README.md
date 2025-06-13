@@ -28,7 +28,7 @@ pyops-lab/
 git clone https://github.com/Matias316/pyops-lab.git
 cd pyops-lab
 poetry install 
-pytest          
+poetry run pytest          
 ```
 
 ## Running subprojects
