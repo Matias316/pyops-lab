@@ -9,7 +9,18 @@ These exercises simulate common SRE scenarios like:
 - Working with Kubernetes or PostgreSQL data
 
 ## 📁 Structure
-
+```bash
+pyops-lab/
+├── parsing/                     
+└── metrics/                    
+    ├── pyproject.toml
+    ├── metrics/                    
+        ├── __init__.py
+        ├── run.py  # this contains `if __name__ == "__main__"`
+        ├── percentiles_calculator.py
+├── pyproject.tml            
+└── README.md
+````
 
 ## 🚀 Getting Started
 
@@ -17,5 +28,16 @@ These exercises simulate common SRE scenarios like:
 git clone https://github.com/Matias316/pyops-lab.git
 cd pyops-lab
 poetry install 
-pytest           # Run all tests
-````
+pytest          
+```
+
+## Running subprojects
+
+All subprojects include entrypoint
+
+```bash
+cd pyops-lab
+
+# Example: poetry run -C metrics python metrics/run.py
+poetry run -C <subproject> python <subproject_folder_name>/run.py
+```
