@@ -1,3 +1,5 @@
+import math
+
 def compute_p95(latencies: list[float]):
     """
     Compute the 95th percentile of a list of latencies in milliseconds.
@@ -12,9 +14,9 @@ def compute_p95(latencies: list[float]):
     
     sorted_latencies = sorted(latencies) # Sorting list ASC
 
-    initial_index = int(0.95 * len(sorted_latencies)) -1 # Calculate position 95th position in the list
+    initial_index = math.ceil(0.95 * len(sorted_latencies)) -1 # Calculate position 95th position in the list
 
     # Consider edge cases
     index = max(0, min(initial_index, len(sorted_latencies) - 1))
     
-    return float(index)
+    return sorted_latencies[index]
