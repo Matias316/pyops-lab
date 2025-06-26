@@ -16,7 +16,6 @@ pyops-lab/
     ├── pyproject.toml
     ├── metrics/                    
         ├── __init__.py
-        ├── run.py  # this contains `if __name__ == "__main__"`
         ├── percentiles_calculator.py
 ├── pyproject.tml            
 └── README.md
@@ -32,8 +31,6 @@ poetry run pytest
 ```
 
 ## Running subprojects
-
-All subprojects include entrypoint
 
 ```bash
 cd pyops-lab
