@@ -8,6 +8,9 @@ description = "Lab project for SRE tasks solved using python"
 python = "^3.12"
 pytest = "^8.4.0"
 
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.1"
+
 [tool.poetry-workspaces]
 members = ["parsing", "metrics"]
 
